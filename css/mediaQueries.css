@@ -1,0 +1,200 @@
+@media screen and (min-width: 800px) {
+
+  /******************** BG CURVE 👇 ********************/
+  .bg-curve {
+    background-image: url(../images/bg-curve-desktop.svg);
+  }
+
+  /******************** SUBFOOTER 👇 ********************/
+  .subfooter {
+    justify-content: center;
+  }
+  .subfooter__cont-form { /*** 👈 Buttons-Sufooter ***/
+    max-width: 480px;
+    width: 100%;
+  }
+  .subfooter-submit {
+    width: 45%;
+  }
+
+  /******************** FOOTER 👇 ********************/
+  .footer {
+    padding: 100px 60px 120px;
+  }
+  .footer-ctr {
+    flex-direction: row;
+    justify-content: center;
+    gap: 70px;
+  }
+  .footer-ctr__contact { /*** 👈 Contact-Footer ***/
+    gap: 0;
+    position: relative;
+    top: 79px;
+  }
+  .footer-ctr__social-media { /*** 👈 Social-Media-Footer ***/
+    position: relative;
+    top: 79px;
+  }
+}
+
+@media screen and (min-width: 1283px) {
+
+  /******************** GENERAL STYLES 🖌️ ********************/
+  *:hover {
+    transition: all .3s ease;
+  }
+  .image {
+    margin: 0;
+  }
+  .imgs {
+    width: 570px;
+  }
+
+  /******************** HEADER 👇 ********************/
+  .header__nav { /*** 👈 Nav-Header ***/
+    margin: 3rem auto;
+    width: 1283px;
+  }
+  .nav-logo {
+    width: 140px;
+  }
+  .header__nav-links {
+    gap: 50px;
+  }
+  .link {
+    font-size: 1rem;
+  }
+  .header__section { /*** 👈 Section-Header ***/
+    margin: 0 auto;
+    width: 1283px;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+  }
+  .header__section-cont {
+    gap: 20px;
+  }
+  .header-title {
+    width: 600px;
+    font-size: 2.5rem;
+  }
+  .header-paragraph {
+    margin: 0;
+    width: 600px;
+    font-size: 1.15rem;
+  }
+  .header__section-cont-form {
+    margin: 0;
+    justify-content: left;
+  }
+  .header-email {
+    width: 320px;
+  }
+  .header-submit {
+    width: 220px;
+  }
+
+  /******************** BG CURVE 👇 ********************/
+  .bg-curve {
+    margin-top: 300px;
+    width: 100%;
+    height: 100%;
+  }
+
+  /******************** MAIN 👇 ********************/
+  .main__ctr {
+    margin:0 auto;
+    width: 1283px;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .main__ctr-cont { /*** 👈 Content-Main ***/
+    gap: 20px;
+  }
+  .main-title { 
+    font-size: 2.35rem;
+  }
+  .main__cont-paragraph {
+    margin: 0;
+    max-width: 590px;
+  }
+  .main-paragraph {
+    font-size: 1.1rem;
+  }
+  .main__cont-link { /*** 👈 Link-how-Fylo-works-Main ***/
+    padding-bottom: 25px;
+    justify-self: left;
+  }
+  .main-link {
+    font-size: 1rem;
+  }
+  .main__cont-testimonial { /*** 👈 Testimonial-Main ***/
+    margin: 0;
+    padding: 18px 30px;
+    max-width: 360px;
+  }
+  .testimonial-paragraph {
+    margin-bottom: 15px;
+    font-size: .85rem;
+  }
+  .user-name {
+    font-size: .7rem;
+  }
+  .user-info {
+    font-size: .6rem;
+  }
+
+  /******************** SUBFOOTER 👇 ********************/
+  .subfooter {
+    padding: 50px 0;
+  }
+  .subfooter-ctr {
+    margin: 0 auto;
+    width: 1283px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .subfooter__cont {
+    margin: 0;
+    text-align: left;
+    gap: 20px;
+  }
+  .subfooter-title {
+    width: max-content;
+    font-size: 2rem;
+  }
+  .subfooter__cont-paragraph {
+    max-width: 490px;
+    font-size: 1rem;
+  }
+  .subfooter__cont-form { /*** 👈 Buttons-Sufooter ***/
+    line-height: 65px;
+  }
+  .subfooter-email, .subfooter-submit {
+    height: 50px;
+  }
+  .subfooter-submit {
+    width: 222px;
+  }
+
+  /******************** FOOTER 👇 ********************/
+  .footer {
+    padding: 100px 0;
+  }
+  .footer-ctr {
+    margin: 0 auto;
+    width: 1283px;
+    font-size: 1rem;
+    justify-content: space-between;
+  }
+  .footer-ctr__contact { /*** 👈 Contact-Footer ***/
+    gap: 0;
+  }
+  .footer-ctr__social-media { /*** 👈 Social-Media-Footer ***/
+    font-size: 1.4rem;
+  }
+}

@@ -1,0 +1,292 @@
+/******************** GENERAL STYLES 🖌️ ********************/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap');
+
+:root {
+  /*** General Colors 👇 ***/
+  --Very-Dark-Blue: hsl(243, 87%, 12%);
+  --Desaturated-Blue: hsl(238, 22%, 44%);
+  --Light-Grayish-Blue: hsl(240, 75%, 98%);
+  --Light-Gray: hsl(0, 0%, 75%);
+  /*** Other Colors 👇 ***/
+  --Second-Button: hsl(224, 93%, 58%);
+  --Hover-Second-Button: hsl(224, 93%, 65%);
+  --Fylo-works-Color: hsl(170, 45%, 43%);
+  /*** Font Families 👇 ***/
+  --Headins-Font: 'Raleway', sans-serif;
+  --Font: 'Open Sans', sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: var(--Font);
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.input-submit {
+  font-family: var(--Headins-Font);
+  font-weight: 600;
+  background-color: var(--Second-Button);
+  color: var(--Light-Grayish-Blue);
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 5px 10px -2px rgba(0, 0, 0, 0.2);
+}
+*::placeholder {
+  opacity: .2;
+}
+.input-submit:hover {
+  background-color: var(--Hover-Second-Button); 
+}
+.image {
+  margin: 0 auto;
+  width: min-content;
+}
+.imgs {
+  width: 20rem;
+}
+
+/******************** HEADER 👇 ********************/
+.header {
+  width: 100%;
+  min-height: 35em;
+  display: grid;
+  gap: 75px;
+}
+.header__nav { /*** 👈 Nav-Header ***/
+  margin: 1.5rem 1.3rem;
+  max-width: 1287px;
+  max-height: min-content;
+  display: flex;
+  justify-content: space-between;
+}
+.nav-logo {
+  width: 90px;
+}
+.header__nav-links {
+  display: flex;
+  gap: 20px;
+}
+.link {
+  font-family: var(--Headins-Font);
+  font-size: .8rem;
+  color: black;
+  text-decoration: none;
+}
+.header__section { /*** 👈 Section-Header ***/
+  margin: 0 23px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 35px;
+}
+.header__section-cont {
+  display: grid;
+  gap: 30px;
+}
+.header-title {
+  font-size: 1.5rem;
+}
+.header-paragraph {
+  margin: 0 12px;
+  font-family: var(--Font);
+  font-size: .9rem;
+}
+.header__section-cont-form {
+  margin: 0 auto;
+  max-width: 675px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+.btn {
+  width: 330px;
+  height: 40px;
+}
+.header-email {
+  padding: 20px;
+  border: 1px solid grey;
+  border-radius: 4px;
+  font-family: var(--Font);
+}
+
+/******************** BG CURVE 👇 ********************/
+.bg-curve {
+  margin-top: 100px;
+  width: 100%;
+  height: 5rem;
+  background-image: url(../images/bg-curve-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+}
+
+/******************** MAIN 👇 ********************/
+.main {
+  padding-bottom: 60px;
+  width: 100%;
+  background-color: var(--Light-Grayish-Blue);
+}
+.main__ctr {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 80px;
+}
+.main__ctr-cont { /*** 👈 Content-Main ***/
+  display: grid;
+  gap: 30px;
+}
+.main-title { 
+  font-size: 1.1rem;
+  text-align: center;
+}
+.main__cont-paragraph {
+  margin: 0 auto;
+  max-width: 467px;
+}
+.main-paragraph {
+  font-size: .9rem;
+  color: rgb(110, 110, 110);
+}
+.main__cont-link { /*** 👈 Link-how-Fylo-works-Main ***/
+  max-width: max-content;
+  justify-self: center;
+}
+.main-link {
+  padding-bottom: 5px;
+  font-size: .9rem;
+  color: var(--Fylo-works-Color);
+  text-decoration: none;
+  display: flex;
+  border-bottom: 2px solid var(--Fylo-works-Color);
+}
+.main-link-icon {
+  padding-left: 7px;
+  width: 27px;
+}
+.main-link:hover, .main-link-icon:hover {
+  filter: saturate(300%) brightness(90%);
+}
+.main__cont-testimonial { /*** 👈 Testimonial-Main ***/
+  margin: 0 auto;
+  padding: 18px 10px 18px 24px;
+  max-width: 355px;
+  background-color: white;
+  display: grid;
+  gap: 10px;
+  border-radius: 2px;
+  box-shadow: 0 0 15px -5px rgba(0, 0, 0, 0.2);
+}
+.testimonial-paragraph {
+  font-size: .8rem;
+  text-align: left;
+  letter-spacing: .3px;
+  line-height: 20px;
+}
+.main__testimonial-profile {
+  display: flex;
+  gap: 10px;
+}
+.user-avatar {
+  width: 35px;
+  border-radius: 50%;
+}
+.user-name {
+  font-size: .65rem;
+  font-weight: 600;
+  letter-spacing: .5px;
+}
+.user-info {
+  font-size: .5rem;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+/******************** SUBFOOTER 👇 ********************/
+.subfooter {
+  padding: 50px;
+  width: 100%;
+  background-color: var(--Desaturated-Blue);
+}
+.subfooter-ctr {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.subfooter__cont {
+  color: var(--Light-Grayish-Blue);
+  display: grid;
+  text-align: center;
+  gap: 20px;
+}
+.subfooter-title {
+  font-size: 1.2rem;
+}
+.subfooter__cont-paragraph {
+  max-width: 430px;
+  font-size: .9rem;
+}
+.subfooter__cont-form { /*** 👈 Buttons-Sufooter ***/
+  max-width: 470px;
+  line-height: 50px;
+}
+.subfooter-email {
+  padding-left: 10px;
+}
+.subfooter-email, .subfooter-submit {
+  width: 100%;
+  height: 40px;
+}
+
+/******************** FOOTER 👇 ********************/
+.footer {
+  padding: 60px 30px 35px;
+  width: 100%;
+  background-color: var(--Very-Dark-Blue);
+  color: var(--Light-Grayish-Blue);
+}
+.footer-ctr {
+  font-size: .9rem;
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+}
+.footer-ctr__info { /*** 👈 Information-Footer ***/
+  display: grid;
+  gap: 30px;
+}
+.footer-logo {
+  width: 160px;
+}
+.info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  opacity: .9;
+}
+.info-icon {
+  width: 17px;
+  height: 15px;
+}
+.footer-ctr__contact { /*** 👈 Contact-Footer ***/
+  display: grid;
+  gap: 20px;
+  opacity: .9;
+}
+.text-contact:hover, .fa-brands:hover {
+  color: var(--Hover-Second-Button);
+  cursor: pointer;
+}
+.footer-ctr__social-media { /*** 👈 Social-Media-Footer ***/
+  font-size: 1rem;
+  text-align: center;
+  letter-spacing: 10px;
+}
